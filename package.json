@@ -9,6 +9,19 @@
     "start": "react-native start",
     "test": "jest"
   },
+  "codegenConfig": {
+    "name": "AppSpec",
+    "type": "components",
+    "jsSrcsDir": "specs",
+    "android": {
+      "javaPackageName": "com.webview"
+    },
+    "ios": {
+      "componentProvider": {
+        "CustomWebView": "RCTWebView"
+      }
+    }
+  },
   "dependencies": {
     "react": "19.2.3",
     "react-native": "0.84.1",
